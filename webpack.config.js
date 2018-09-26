@@ -1,10 +1,10 @@
-const path = require('path');
+const { resolve } = require('path');
 
 module.exports = {
-  context: path.resolve(__dirname, 'client'),
+  context: resolve(__dirname, 'client'),
   entry: './index.jsx',
   output: {
-    path: path.resolve(__dirname, 'client/dist/'),
+    path: resolve(__dirname, 'client/dist/'),
     filename: 'bundle.js',
     publicPath: '/dist/',
   },
